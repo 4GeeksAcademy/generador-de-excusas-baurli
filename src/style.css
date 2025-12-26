@@ -1,5 +1,64 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(180deg, #0b0b10, #111827);
+  color: #f9fafb;
+}
+
+/* layout */
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+}
+
+/* title */
+h1 {
+  margin: 0;
+  font-size: 56px;
+  letter-spacing: 1px;
+  color: #f9fafb;
+}
+
+/* excuse text */
+#excuse {
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 700px;
+  line-height: 1.4;
+  color: #e5e7eb;
+  text-align: center;
+  margin: 20px auto;
+  transition: opacity 0.15s ease;
+}
+
+/* christmas button */
+#btn {
+  margin-top: 8px;
+  padding: 14px 22px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #14532d;
+  background: linear-gradient(135deg, #991b1b, #14532d);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#btn:hover {
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.6),
+              0 0 18px rgba(220, 38, 38, 0.4);
+}
+
+#btn:active {
+  transform: scale(0.97);
 }
